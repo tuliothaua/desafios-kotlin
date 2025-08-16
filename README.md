@@ -26,7 +26,7 @@ O objetivo é treinar **lógica de programação**, controle de fluxo e boas pr�
 ---
 
 ## 🎯 Objetivo
-Construir uma base sólida em **lógica de programação** para avançar no desenvolvimento de software.
+Construir uma base boa em **lógica de programação** para avançar no desenvolvimento de software.
 
 ---
 
