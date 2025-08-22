@@ -12,7 +12,6 @@ O objetivo é treinar **lógica de programação**, controle de fluxo e boas pr�
 - Estruturas de Decisão (`if`, `when`)  
 - Estruturas de Repetição (`for`, `while`)  
 - Uso de `break` e `continue`  
-- Funções  
 - Manipulação de Strings  
 - Entrada e Saída de Dados  
 
