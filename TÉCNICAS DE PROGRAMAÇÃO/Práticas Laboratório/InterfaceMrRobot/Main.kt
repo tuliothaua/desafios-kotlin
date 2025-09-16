@@ -1,6 +1,12 @@
-//Túlio Thauã Dutra >>
+// ╔════════════════════════════════════════════════════╗
+// ║  AUTHOR : Túlio Thauã Dutra                        ║
+// ║  HANDLE : root@thaua                               ║
+// ║  STATUS : Kotlin Learning Mode >> ACTIVE           ║
+// ║  FILE   : Main.kt                                  ║
+// ╚════════════════════════════════════════════════════╝
+
 fun main() {
-  //Creating the Banner
+
     val banner = """
 ████████╗██╗  ██╗ █████╗ ██╗   ██╗ █████╗ 
 ╚══██╔══╝██║  ██║██╔══██╗██║   ██║██╔══██╗
@@ -12,6 +18,6 @@ fun main() {
        t w i z z y t h a u a
     """.trimIndent()
 
-    //Call the Banner
+    // [EXEC] :: PRINT THE BANNER TO THE TERMINAL
     println(banner)
 }
