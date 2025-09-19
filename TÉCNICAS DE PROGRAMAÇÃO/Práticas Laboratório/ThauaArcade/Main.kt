@@ -21,8 +21,8 @@ fun main() {
     //[FUNC] :: THE "=" SEPARATOR
     val limit = banner.length
     var separator = "="
-    for(i in 0..limit step 7){
-        separator += "="
+    for(i: Int in 0..limit step 7){
+        separator += "="; i
     }
 
     //[EXEC] :: PRINT THE BANNER TO THE TERMINAL
@@ -31,17 +31,42 @@ fun main() {
     println(separator)
 
     //[INFO] :: HELLO WORLD, Welcome to my Program
-    println("\n\t [Welcome friend to my GAME Program - what you wanna play?]")
-    println("\n\t [1]BATALHA NAVAL \t\t\t  [2]S3C0ND PR0GR4M")
+    println("\n\t [Welcome friend to my GAME Program - What you wanna play?]")
+    println("\n\t - [1] NAVAL BATTLE \t\t\t\t  [2] S3C0ND PR0GR4M -")
+    println("\n\t [If you wanna stop the loop - just click the [0] to stop!]")
     println("\n" + separator)
-    print("\n [TYPE] :: > ")
+    print("\t[TYPE] :: > ")
 
-    //[VAR] :: User Decision
-    var userDecision = readln().toInt()
+    //[VAR] :: USER DECISION
+    var userDecision: Int
+    userDecision = readln().toInt()
 
-    if(userDecision == 1){
-        println(1)
-    } else if (userDecision == 2){
-        println(2)
-    }
+    //[LOOP] :: THE LOOP FROM VAR DECISION!
+    do {
+        when (userDecision) {
+            1 -> {
+                println(separator)
+                println("\t[GAME CHOSEN] :: NAVAL BATTLE!")
+                println(separator)
+            }
+            2 -> {
+                println(separator)
+                println("\t[INFO] :: IM SORRY IT WILL BE RELEASE SOON")
+                println(separator)
+            }
+            0 -> {
+                println(separator)
+                println("\t[EXIT] :: ALRIGHT SCHYEAH!")
+                println(separator)
+                break
+            }
+            else -> {
+                println(separator)
+                println("\t[ERROR] :: YOU MUST CHOOSE ONLY [1], [2] OR [0] ")
+                println(separator)
+            }
+        }
+        print("\t[TYPE] :: > ")
+        userDecision = readln().toInt()
+    } while(true)
 }
