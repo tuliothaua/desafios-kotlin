@@ -7,7 +7,7 @@
 
 fun main() {
 
-    //[VAR] :: MY B34UTY F1RE B4NN3R.x0Thaua
+    //[VAR] :: MY TW1ZZY B4NN3R.x0Thaua
     val banner = """
     ________         _____                  ___________                       
     ___  __/__      ____(_)______________  ___  /___  /_______ ____  _______ _
@@ -48,6 +48,7 @@ fun main() {
                 println(separator)
                 println("\t[GAME CHOSEN] :: NAVAL BATTLE!")
                 println(separator)
+                battleNaval()
             }
             2 -> {
                 println(separator)
@@ -69,4 +70,12 @@ fun main() {
         print("\t[TYPE] :: > ")
         userDecision = readln().toInt()
     } while(true)
+}
+
+fun battleNaval(){
+    val tableNaval = Array(10) { Array (10) { (0..99).random()}}
+    var userTry = 15
+    var userPoints = 0
+    
+   return battleNaval()
 }
