@@ -47,7 +47,6 @@ fun main() {
                 println("\t[GAME CHOSEN] :: NAVAL BATTLE!")
                 println(separator)
                 battleNaval()
-
             }
             2 -> {
                 println(separator)
@@ -67,8 +66,7 @@ fun main() {
             }
         }
 
-        println(separator)
-        println("\t[YOU WANNA PLAY AGAIN? [1] OR LEAVE WITH [0]")
+        println("\t[1] PLAY AGAIN? OR LEAVE WITH [0]")
         print("\t[TYPE] :: > ")
         userDecision = readln().toInt()
 
@@ -77,7 +75,6 @@ fun main() {
 
 //[FUNC] :: THE "=" SEPARATOR
 fun separator(): String {
-
     val banner = """
     ________         _____                  ___________                       
     ___  __/__      ____(_)______________  ___  /___  /_______ ____  _______ _
@@ -129,7 +126,8 @@ fun battleNaval() {
     while (tries > 0 && points < totalShips){
         //[INFO] :: PRINT THE BOARD
         print("\t\t\t\t\t")
-        for (c in 0 until 10) print("$c\t")
+        for (c in 0 until 10)
+        print("$c\t")
         println()
         for (i in board.indices){
             print("\t\t\t\t$i\t")
@@ -178,3 +176,4 @@ fun battleNaval() {
     } else println(RED + "\t[OHH!] :: NO MORE ATTEMPTS - GAME OVER ❗" + RESET)
         println("[INFO] :: YOUR POINTS: $points")
 }
+
