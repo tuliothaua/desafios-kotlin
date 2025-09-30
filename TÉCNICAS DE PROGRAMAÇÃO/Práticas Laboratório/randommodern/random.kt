@@ -34,16 +34,17 @@ fun main() {
     
     //[INFO] :: HELLO WORLD, Welcome to my Program
     val randomNumber = List(1) {Random.nextInt(0, 20)}
-    println("\t[The random number generated is $randomNumber]")
+    println("\n\t - [The random number generated is $randomNumber] -")
     
     val chooseNumber = 10
-    println("\t[You choose the number: $chooseNumber]")
+    println("\t - [You choose the number: $chooseNumber] -")
     val auxRamber = randomNumber[0]
     
+    //[INFO] :: COMPARING THE RESULTS
     if(chooseNumber != auxRamber){
         if (chooseNumber > auxRamber){
-      	println("\t[The random number is lower!]")}
-      	else {println("\t[The random number is bigger!]")}}
-      	else {println("\t[You got the number right!]")
+      	println("\t - [The random number is lower!] -")}
+      	else {println("\t - [The random number is bigger!] -")}}
+      	else {println("\t - [You got the number right!] -")
     }
 }
